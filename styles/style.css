@@ -1,0 +1,120 @@
+body {
+	background: url(http://www.inkspilldesign.com/demo/wood-tile-background.jpg);
+	background-color: #424242;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+#container {
+	width: 400px;
+	/*width: 200px;*/
+	/*padding: 8px 8px 20px 8px;*/
+	padding: 0;
+	margin: 20px auto;
+	background-color: #1A252D; /*#ABABAB;*/
+	border-radius: 4px;
+	/*border-top: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #C1C1C1;
+	border-left: 2px solid #C1C1C1;
+/*	box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);*/
+}
+
+#display {
+	display: block;
+	/*margin: 15px auto;*/
+	margin: 70px 0 0;
+	height: 100px;
+	/*height: 42px;*/
+	/*width: 174px;*/
+	width: 400px;
+	padding: 20px 10px 0;
+	/*padding: 0 10px;*/
+	border: none;
+	/*border-radius: 4px;
+	border-top: 2px solid #C1C1C1;
+	border-right: 2px solid #C1C1C1;
+	border-bottom: 2px solid #FFF;
+	border-left: 2px solid #FFF;*/
+	background-color: #232E37; /*#FFF;*/
+	/*box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);*/
+	font-size: 28px;
+	color: #E7ECF3; /*#666;*/
+	text-align: right;
+	font-weight: 400;
+}
+
+.button {
+	float: left;
+	/*display: inline-block;*/
+	/*margin: 2px;*/
+	margin: 0;
+	width: 100px;
+	height: 100px;
+	/*width: 42px;
+	height: 42px;*/
+	font-size: 40px;
+	font-weight: 100;
+	font-stretch: normal;
+	/*font-size: 16px;*/
+	/*font-weight: bold;
+	border-radius: 4px;*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+.mathButtons {
+	/*margin: 2px 2px 6px 2px;*/
+	margin: 0;
+	color: #E7ECF3; /*#FFF;*/
+	/*text-shadow: -1px -1px 0px #44006F;*/
+	background-color: #3996C9;/*#434343;*/
+	border-top: 2px solid #C1C1C1;
+	border-right: 2px solid #C1C1C1;
+	border-bottom: 2px solid #181818;
+	border-left: 2px solid #181818;
+	/*box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #2E2E2E;*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+.digits {
+	color: #E7ECF3; /*#181818;*/
+/*	text-shadow: 1px 1px 0px #FFF;*/
+	background-color: #1A252D; /*#EBEBEB;*/
+	border-top: 1px solid #57616C; /*2px solid #FFF;*/
+	border-right: 1px solid #57616C; /*2px solid #FFF;*/
+	/*border-bottom: 1px solid #57616C; /*2px solid #C1C1C1;*/
+	/*border-left: 1px solid #57616C; /*2px solid #C1C1C1;*/
+	/*border-radius: 4px;*/
+	/*box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #DCDCDC;*/
+}
+.row .digits:nth-child(3) {
+	border-right: none;
+}
+.digits:hover,
+.mathButtons:hover,
+#clearButton:hover {
+	background-color: #232E37; /*#FFBA75;*/
+	/*box-shadow: 0px 0px 2px #FFBA75, inset 0px -20px 1px #FF8000;*/
+	/*border-top: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #AE5700;
+	border-left: 2px solid #AE5700;*/
+}
+
+#clearButton {
+	color: #FFF;
+	text-shadow: -1px -1px 0px #44006F;
+	background-color: #D20000;
+	border-top: 2px solid #FF8484;
+	border-right: 2px solid #FF8484;
+	border-bottom: 2px solid #800000;
+	border-left: 2px solid #800000;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
+}

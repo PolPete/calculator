@@ -3,12 +3,22 @@
 <head>
   <title>Calculator</title>
   <meta charset="UTF-8">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px;max-height:400px;" id="home">
+    <div class="w3-padding-large">
+      <h1 class="w3-xxlarge">CALCULATOR PROJECT</h1>
+      <h3>DESIGN BY POLPETE</h3>
+    </div>
+  </header>
+
+  <!-- Calculator -->
   <div class="container">
   	<fieldset id="container">
   		<form name="calculator">
@@ -22,20 +32,20 @@
     			<input class="button mathButtons w3-input" type="button" value="+" onclick="calculator.display.value += ' + '">
         </div>
         <div class="row">
-    			<input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
-    			<input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
-    			<input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
-    			<input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+    			<input class="button digits w3-input" type="button" value="4" onclick="calculator.display.value += '4'">
+    			<input class="button digits w3-input" type="button" value="5" onclick="calculator.display.value += '5'">
+    			<input class="button digits w3-input" type="button" value="6" onclick="calculator.display.value += '6'">
+    			<input class="button mathButtons w3-input" type="button" value="-" onclick="calculator.display.value += ' - '">
     		</div class="row">
-    			<input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
-    			<input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
-    			<input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
-    			<input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
+    			<input class="button digits w3-input" type="button" value="1" onclick="calculator.display.value += '1'">
+    			<input class="button digits w3-input" type="button" value="2" onclick="calculator.display.value += '2'">
+    			<input class="button digits w3-input" type="button" value="3" onclick="calculator.display.value += '3'">
+    			<input class="button mathButtons w3-input" type="button" value="x" onclick="calculator.display.value += ' * '">
     		<div class="row">
-    			<input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
-    			<input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
-    			<input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
-    			<input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+    			<input id="clearButton" class="button w3-input" type="button" value="C" onclick="calculator.display.value = ''">
+    			<input class="button digits w3-input" type="button" value="0" onclick="calculator.display.value += '0'">
+    			<input class="button mathButtons w3-input equalButton" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+    			<input class="button mathButtons w3-input" type="button" value="/" onclick="calculator.display.value += ' / '">
         </div>
   		</form>
   	</fieldset>

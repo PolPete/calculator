@@ -25,41 +25,40 @@
   		<form name="calculator">
 			<div id="upperBg"></div>
 			<div class="displayWrapper">
-				<input id="display" type="text" name="display" readonly>
+        <input id="display" type="text" name="display">
 			</div>
-			<input id="mainDisplay" type="text" name="mainDisplay" readonly>
+			<input id="mainDisplay" type="text" name="mainDisplay">
 
 			<div class="buttonContainer">
 				<div class="row">
-					<input class="button digits w3-input" type="button" value="7" onclick="calculator.display.value += '7'">
-					<input class="button digits w3-input" type="button" value="8" onclick="calculator.display.value += '8'">
-					<input class="button digits w3-input" type="button" value="9" onclick="calculator.display.value += '9'">
-					<input class="button mathButtons w3-input" type="button" value="+" onclick="calculator.display.value += ' + '">
+          <input class="opBtn button digits w3-input" type="button" value="7">
+          <input class="opBtn button digits w3-input" type="button" value="8">
+          <input class="opBtn button digits w3-input" type="button" value="9">
+          <input class="opBtn button mathButtons w3-input" type="button" value="+">
 				</div>
 				<div class="row">
-					<input class="button digits w3-input" type="button" value="4" onclick="calculator.display.value += '4'">
-					<input class="button digits w3-input" type="button" value="5" onclick="calculator.display.value += '5'">
-					<input class="button digits w3-input" type="button" value="6" onclick="calculator.display.value += '6'">
-					<input class="button mathButtons w3-input" type="button" value="-" onclick="calculator.display.value += ' - '">
+					<input class="opBtn button digits w3-input" type="button" value="4">
+					<input class="opBtn button digits w3-input" type="button" value="5">
+					<input class="opBtn button digits w3-input" type="button" value="6">
+					<input class="opBtn button mathButtons w3-input" type="button" value="-">
 				</div>
 				<div class="row">
-					<input class="button digits w3-input" type="button" value="1" onclick="calculator.display.value += '1'">
-					<input class="button digits w3-input" type="button" value="2" onclick="calculator.display.value += '2'">
-					<input class="button digits w3-input" type="button" value="3" onclick="calculator.display.value += '3'">
-					<input class="button mathButtons w3-input" type="button" value="&#247;" onclick="calculator.display.value += ' / '">
-
+					<input class="opBtn button digits w3-input" type="button" value="1">
+					<input class="opBtn button digits w3-input" type="button" value="2">
+					<input class="opBtn button digits w3-input" type="button" value="3">
+					<input class="opBtn button mathButtons w3-input" type="button" value="&#247;">
 				</div>
 				<div class="row">
-					<input class="button digits w3-input" type="button" value="0" onclick="calculator.display.value += '0'">
-					<input class="button mathButtons w3-input equalButton" type="button" value="." onclick="calculator.display.value = += ' . '">
-					<input class="button mathButtons w3-input equalButton" type="button" value="&#8592;" onclick="calculator.display.value = eval(calculator.display.value)">
-					<input class="button mathButtons w3-input" type="button" value="&#215;" onclick="calculator.display.value += ' * '">
+					<input class="opBtn button digits w3-input" type="button" value="0">
+					<input class="opBtn button mathButtons w3-input" type="button" value=".">
+					<input class="opBtn button mathButtons w3-input" type="button" value="&#8592;">
+					<input class="opBtn button mathButtons w3-input" type="button" value="&#215;">
 				</div>
 			</div>
 			<div class="clearEqualContainer">
 				<div class="row">
-					<input id="clearButton" class="button w3-input" type="button" value="C" onclick="calculator.display.value = ''">
-					<input id="equalButton" class="button mathButtons w3-input equalButton" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+					<input id="clearButton" class="button w3-input" type="button" value="C">
+					<input id="equalButton" class="button mathButtons w3-input equalButton" type="button" value="=">
 				</div>
 			</div>
   		</form>
